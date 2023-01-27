@@ -60,4 +60,10 @@ p{
         padding-right: 0rem;
         color: var(--secondary-color);
     }
+
+    .main:not(#article-video) {
+       margin-left:1rem;
+       margin-right:1rem;
+       z-index:0;
+    }
 }
