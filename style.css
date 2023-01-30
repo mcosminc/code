@@ -183,9 +183,13 @@ article > hr{
         display: none;
     }
 
-
-    hr{
-        margin-left: 1rem;
-        width: 90%;
+    .list > li{
+        color: var(--secondary-color);
+        display: list-item;
+        margin-left: 3rem;
+        margin-top: 1rem;
+        list-style-type:circle;
+        overflow-x: visible;
     }
+    
 }
