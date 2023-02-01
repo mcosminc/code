@@ -71,15 +71,21 @@ p{
 }
 
 #poza2{
-    width: 30vw;
-    height: 40vh;
-    border-radius: 20px;
+        width: 40vw;
+        height: 50vh;
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+        margin-top: 1rem;
 }
 
 #poza3{
-    width: 50vw;
-    height: 40vh;
+    width: 60vw;
+    height: 60vh;
+    display: block;
+    margin: auto;
     border-radius: 20px;
+    margin-top: 1rem;
 }
 
 #poza4{
@@ -116,7 +122,55 @@ p{
     border-radius: 20px;
 }
 
+.rect{
+    display: grid;
+    grid-template-columns: auto auto;
+    width:25rem;
+    height: 25rem;
+    background-color: blue;
+    margin-top: 2rem;
+    border-radius: 20px;
+
+}
+
+#r1p,#r2p,#r3p,#r4p{
+    display: none;
+    margin: auto;
+    line-height: 1rem;
+    color: aliceblue;
+    font-size: 1em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.rect:hover > #r1p{
+    display: block;
+    margin: 20vh 0vw 0vw 0.2vw;
+}
+.rect:hover{
+    background-color: rgba(182, 182, 182, 0.301);
+}
+.rect:hover > #r2p{
+    display: block;
+    margin: 20vh 0vw 0vw 1vw;
+}
+.rect:hover > #r3p{
+    display: block;
+    margin: 20vh 0vw 0vw 0vw;
+}
+.rect:hover > #r4p{
+    display: block;
+    margin: 20vh 0vw 0vw 0vw;
+}
+
+#art2,#art3,#art4,#art5{
+    margin-top: 5rem;
+}
+
 @media screen and (max-width: 500px) {
+    
     .header{
         font-size: 1.5rem;
         text-align: left;
@@ -159,12 +213,13 @@ p{
 
     #poza2{
         width: 90vw;
-        height: 30vh;
+        height: 40vh;
         display: block;
         margin: auto;
         border-radius: 20px;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
+
 
     #poza3{
         width: 90vw;
@@ -177,7 +232,7 @@ p{
 
     #poza4{
         width: 90vw;
-        height: 15vh;
+        height: 20vh;
         display: block;
         margin: auto;
         border-radius: 20px;
@@ -211,9 +266,29 @@ p{
         margin-top: 1rem;
     }
 
+    #poza8{
+        width: 90vw;
+        height: 30vh;
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+        margin-top: 1rem;
+    }
+
+
     .grid{
         display: grid;
         grid-template-columns: auto;
         text-align: left;
     }
+
+    .rect{
+        width: 20rem;
+        height: 20rem;
+        margin-left: 7vw;
+    }
+    .rect:not(:first-child){
+        margin-top: -10px;
+    }
+
 }
