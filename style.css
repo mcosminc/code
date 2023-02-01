@@ -155,7 +155,6 @@ article > hr{
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 20px;
-
 }
 
 .list > li{
@@ -192,4 +191,11 @@ article > hr{
         overflow-x: visible;
     }
     
+    article > hr {
+        background-color: var(--secondary-color);
+        height: 1px;
+        border: none;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 }
