@@ -105,14 +105,18 @@ p{
 }
 
 #poza6{
-    margin-left: 10rem;
+    display: block;
+    margin: auto;
     border-radius: 20px;
-    width: 36vw;
-    height: 64vh;
+    width: 60vw;
+    height: 80vh;
 }
 
 #poza7{
-    margin-right: 10rem;
+    display: block;
+    margin: auto;
+    width: 50vw;
+    height: 80vh;
     border-radius: 20px;
 }
 
@@ -130,7 +134,7 @@ p{
     margin-top: 2rem;
     border-radius: 20px;
     overflow-y: hidden;
-    z-index: 1;
+
 }
 
 #r1p,#r2p,#r3p,#r4p{
@@ -227,6 +231,8 @@ p{
        width: 100vw;
     }
 
+    
+    
     #poza1{
         width: 90vw;
         height: 30vh;
@@ -305,15 +311,29 @@ p{
         display: grid;
         grid-template-columns: auto;
         text-align: left;
+        gap: 5rem;
     }
 
     .rect{
         width: 20rem;
         height: 20rem;
         margin-left: 7vw;
+        margin-top: 2rem;
     }
     .rect:not(:first-child){
         margin-top: -10px;
+    }
+
+    #s1p{
+        display: block;
+        margin: auto;
+        width: 20rem;
+        height: 20rem;
+        
+    }
+
+    #referinta{
+        display: none;
     }
 
 }
