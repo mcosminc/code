@@ -62,7 +62,7 @@ p{
 }
 
 #poza1{
-    width: 70vw;
+    width: 60vw;
     height: 80vh;
     display: block;
     margin: auto;
@@ -127,10 +127,10 @@ p{
     grid-template-columns: auto auto;
     width:25rem;
     height: 25rem;
-    background-color: blue;
     margin-top: 2rem;
     border-radius: 20px;
-
+    overflow-y: hidden;
+    z-index: 1;
 }
 
 #r1p,#r2p,#r3p,#r4p{
@@ -145,28 +145,53 @@ p{
     text-align: center;
 }
 
-.rect:hover > #r1p{
-    display: block;
-    margin: 20vh 0vw 0vw 0.2vw;
-}
 .rect:hover{
-    background-color: rgba(182, 182, 182, 0.301);
-}
-.rect:hover > #r2p{
-    display: block;
-    margin: 20vh 0vw 0vw 1vw;
-}
-.rect:hover > #r3p{
-    display: block;
-    margin: 20vh 0vw 0vw 0vw;
-}
-.rect:hover > #r4p{
-    display: block;
-    margin: 20vh 0vw 0vw 0vw;
+    background-color: rgba(0, 0, 7, 0.829);
+    overflow-y: hidden;
+    z-index: 0;
+
 }
 
-#art2,#art3,#art4,#art5{
-    margin-top: 5rem;
+
+#s1p{
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    width:25rem;
+    height: 25rem;
+}
+
+#s2p{
+    display: block;
+    margin: auto;
+
+    border-radius: 20px;
+    width:25rem;
+    height: 25rem;
+}
+
+#s3p{
+    display: block;
+    margin: auto;
+    z-index: 0;
+    border-radius: 20px;
+    width:25rem;
+    height: 25rem;
+}
+
+#s4p{
+    display: block;
+    margin: auto;
+    z-index: 0;
+    border-radius: 20px;
+    width:25rem;
+    height: 25rem;
+}
+
+#s1p:hover{
+    filter: blur(5px);
+    color: brown;
+    background-color: blue;
 }
 
 @media screen and (max-width: 500px) {
